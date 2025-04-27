@@ -61,3 +61,17 @@
   .backdrop.show {
     opacity: 30%;
   }
+
+ 
+
+.popup-modal {
+    /* Whenever transform or opacity change, do it smoothly (animate it) */
+    transition: transform 0.3s ease-in-out, opacity 0.4s ease;
+    /* Move the popup horizontally left by 50% and vertically above the screen by 100%. */
+    transform: translate(-50%, -100%);
+  }
+  
+  .popup-modal.show {
+    /* center it vertically */
+    transform: translate(-50%, -50%);
+  }
